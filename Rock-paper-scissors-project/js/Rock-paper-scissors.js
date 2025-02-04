@@ -88,12 +88,12 @@ function playgame(userchoice) {
     document.querySelector(".moves-left").innerHTML = `
         <h2>玩家出</h2>
         <div class="move-images">
-            <img src="/img/${userchoice}.png" class="move-icon animated-player" alt="${userchoice}">
+            <img src="img/${userchoice}.png" class="move-icon animated-player" alt="${userchoice}">
         </div>`
     document.querySelector(".moves-right").innerHTML = `
         <h2>電腦出</h2>
         <div class="move-images">
-            <img src="/img/${computerchoice}.png" class="move-icon animated-computer" alt="${computerchoice}">
+            <img src="img/${computerchoice}.png" class="move-icon animated-computer" alt="${computerchoice}">
         </div>`
     updateScoreElement();
 }
