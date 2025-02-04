@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜拳遊戲</title>
+    <link rel="stylesheet" href="css/Rock-paper-scissors.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="moves moves-left">
+            <div class="move-images"></div>
+        </div>
+        <div class="wrap">
+            <h1 class="title">猜拳遊戲</h1>
+            <div class="score">
+                <p>勝: <span id="wins">0</span> | 輸: <span id="losses">0</span> | 平手: <span id="ties">0</span></p>
+            </div>
+            <div class="button-container">
+                <button onclick="playgame('scissors')"><img src="/img/scissors.png" class="move-icon" alt="scissors"></button>
+                <button onclick="playgame('rock')"><img src="/img/rock.png" class="move-icon" alt="rock"></button>
+                <button onclick="playgame('paper')"><img src="/img/paper.png" class="move-icon" alt="paper"></button>
+            </div>
+            <p class="result"></p>
+            <button class="reset-button" onclick="reset()">重新計分</button>
+        </div>
+        <div class="moves moves-right">
+            <div class="move-images"></div>
+        </div>
+    </div>
+
+    <script src="js/Rock-paper-scissors.js"></script>
+</body>
+</html>
